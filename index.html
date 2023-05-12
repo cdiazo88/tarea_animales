@@ -1,12 +1,73 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1></h1>
-</body>
+    <title>Botones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="titulo">
+        <h1 style="color: blueviolet;">Pincha un animal</h1>
+    </div>
+    <div class="button-wrapper">
+      <button onclick="clickAnimal('perro')">
+          <div><img  class="animal-boton" src="./src/imagen/perro.png" /></div>
+          <div class="titulo-boton">Perro</div>
+    </button>
+      <button onclick="clickAnimal('pajaro')">
+          <div><img  class="animal-boton" src="./src/imagen/pajaro.png"/></div>
+          <div class="titulo-boton">Pajaro</div>
+    </button>
+      <button onclick="clickAnimal('elefante')">
+          <div><img  class="animal-boton" src="./src/imagen/elefante.png"/></div>
+          <div class="titulo-boton">Elefante</div>
+    </button>
+      <button onclick="clickAnimal('caballo')">
+          <div><img  class="animal-boton" src="./src/imagen/caballo.png"/></div>
+          <div class="titulo-boton">Caballo</div>
+    </button>
+      <button onclick="clickAnimal('mono')">
+          <div><img  class="animal-boton" src="./src/imagen/mono.png"/></div>
+          <div class="titulo-boton">Mono</div>
+    </button>
+      <button onclick="clickAnimal('lobo')">
+          <div><img  class="animal-boton" src="./src/imagen/lobo.png"/></div>
+          <div class="titulo-boton">Lobo</div>
+    </button>
+      <button onclick="clickAnimal('leon')">
+          <div><img  class="animal-boton" src="./src/imagen/leon.png"/></div>
+          <div class="titulo-boton">Leon</div>
+    </button>
+      <button onclick="clickAnimal('vaca')">
+          <div><img  class="animal-boton" src="./src/imagen/vaca.png"/></div>
+          <div class="titulo-boton">Vaca</div>
+    </button>
+      <button onclick="clickAnimal('cabra')">
+          <div><img  class="animal-boton" src="./src/imagen/cabra.png"/></div>
+          <div class="titulo-boton">Cabra</div>
+    </button>
+      <button onclick="clickAnimal('gato')">
+          <div><img  class="animal-boton" src="./src/imagen/gato.png"/></div>
+          <div class="titulo-boton">Gato</div>
+    </button>
+    </div>
+    <div id="modal" class="modalmask">
+      <div class="modalbox movedown">
+          <div class="contenedor-card">
+            <div class="card">
+                <img class="imagen-animal-seleccionado" src="https://via.placeholder.com/150" alt="Imagen de la card">
+                <div class="card-info">
+                  <div class="cont-titulo-animal-seleccionado"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+  </div>
+  </body>
+  <script src="script.js"></script>
 </html>
