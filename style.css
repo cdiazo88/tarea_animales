@@ -1,0 +1,168 @@
+/* Estilos para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+    font-family: 'Jua', sans-serif;
+    background-image: url('src/imagen/background.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .titulo{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  /* Estilos para el contenedor de botones */
+  .button-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para los botones */
+  button {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(238, 231, 231);
+    color: #673AB7;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 800;
+  }
+
+  .animal-boton{
+    height: 90px;
+    width: 100px;
+  }
+  
+  button:hover {
+    background-color: rgb(171, 164, 237);
+    box-shadow: inset 0 0 20px rgba(125, 49, 172, 0.5), 0 0 20px rgba(100, 49, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+    border-shadow: 
+  }
+
+  /* Estilos para la card */
+.contenedor-card{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  /* Estilos para la imagen de la card */
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Estilos para la información de la card */
+  .card-info {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color:#673AB7
+  }
+  
+  .card-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .card-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .card-info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-info a:hover {
+    background-color: #3e8e41;
+  }
+
+  /*Efecto*/
+.modalmask {
+  position: fixed;
+  font-family: Arial, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalmask:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox{
+  width: 400px;
+  position: relative;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+  border-radius:3px;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  transition: all 500ms ease-in;
+   
+}
+
+/*Movimientos*/
+.movedown {
+  margin: 0 auto;
+}
+
+.modalmask:target .movedown{       
+  margin:5% auto;
+}
+
+.modalmask:target .resize{
+  width:400px;
+  height:200px;
+}
+
+  
